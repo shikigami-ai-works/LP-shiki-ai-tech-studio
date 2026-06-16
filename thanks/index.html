@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>送信完了 | しき AI Tech Studio</title>
+  <meta name="description" content="相談内容の送信完了ページです。返信目安と次の確認導線を案内します。">
+  <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#101315">
+  <link rel="canonical" href="https://shiki-ai-tech.example/thanks/">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+  <script src="../assets/app.js" defer></script>
+</head>
+<body class="thanks-page" data-page="thanks">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../" aria-label="しき AI Tech Studio ホーム">
+        <span class="brand__mark" aria-hidden="true">S</span>
+        <span>
+          <span class="brand__name">しき AI Tech Studio</span>
+          <span class="brand__tagline">Evidence first AI implementation</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__bar" aria-hidden="true"></span>
+        <span class="visually-hidden">ナビゲーションを開閉</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="サンクスページナビゲーション">
+        <a href="../#proof" data-track="cta" data-cta-id="thanks_proof" data-section-id="thanks">証拠を見る</a>
+        <a class="button button--small" href="../#contact" data-track="cta" data-cta-id="thanks_contact" data-section-id="thanks">フォームへ戻る</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="simple-main" id="main">
+    <section class="simple-panel" aria-labelledby="thanks-title">
+      <p class="section__label">Thanks</p>
+      <h1 id="thanks-title">送信を受け付けました。</h1>
+      <p>ありがとうございます。静的デモでは、このページ到達時に `generate_lead` を発火します。本番環境では、同じタイミングでサーバー側保存、通知、監査ログ記録を行う想定です。</p>
+      <p class="thanks-status" data-thanks-status>送信状態を確認しています。</p>
+
+      <h2>次にできること</h2>
+      <ul>
+        <li>相談内容に関連する証拠カードを見直す</li>
+        <li>関連URLや追加情報を思い出したらフォームへ戻って追記する</li>
+        <li>本番公開前に、日程予約URLや返信SLAを設定する</li>
+      </ul>
+
+      <div class="simple-actions">
+        <a class="button" href="../#proof" data-track="cta" data-cta-id="thanks_primary_proof" data-section-id="thanks">証拠を見る</a>
+        <a class="button button--outline" href="../#contact" data-track="cta" data-cta-id="thanks_secondary_contact" data-section-id="thanks">フォームへ戻る</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div>
+        <a class="brand brand--footer" href="../" aria-label="しき AI Tech Studio ホーム">
+          <span class="brand__mark" aria-hidden="true">S</span>
+          <span>
+            <span class="brand__name">しき AI Tech Studio</span>
+            <span class="brand__tagline">Evidence first AI implementation</span>
+          </span>
+        </a>
+        <p>本番では `POST /api/lead` 成功後に303でこのページへ遷移させます。</p>
+      </div>
+      <nav aria-label="フッターナビゲーション">
+        <a href="../">トップ</a>
+        <a href="../privacy/">個人情報の取扱い</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

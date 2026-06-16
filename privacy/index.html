@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>個人情報の取扱い | しき AI Tech Studio</title>
+  <meta name="description" content="しき AI Tech Studio の問い合わせフォームにおける個人情報の取扱い方針です。">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#101315">
+  <link rel="canonical" href="https://shiki-ai-tech.example/privacy/">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+  <script src="../assets/app.js" defer></script>
+</head>
+<body class="privacy-page" data-page="privacy">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../" aria-label="しき AI Tech Studio ホーム">
+        <span class="brand__mark" aria-hidden="true">S</span>
+        <span>
+          <span class="brand__name">しき AI Tech Studio</span>
+          <span class="brand__tagline">Evidence first AI implementation</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__bar" aria-hidden="true"></span>
+        <span class="visually-hidden">ナビゲーションを開閉</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="プライバシーページナビゲーション">
+        <a href="../#proof" data-track="cta" data-cta-id="privacy_proof" data-section-id="privacy">証拠</a>
+        <a class="button button--small" href="../#contact" data-track="cta" data-cta-id="privacy_contact" data-section-id="privacy">問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="simple-main" id="main">
+    <article class="simple-panel">
+      <p class="section__label">Privacy</p>
+      <h1>個人情報の取扱い</h1>
+      <p>このページは、問い合わせフォームを本番運用する前のドラフトです。正式公開前に、運営主体、保存先、保存期間、通知先、削除依頼窓口を確定してください。</p>
+
+      <h2>取得する情報</h2>
+      <ul>
+        <li>相談種別、氏名、会社名・所属、メールアドレス</li>
+        <li>関連URL、希望時期、相談内容</li>
+        <li>フォーム送信時刻、送信元ページ、BOT対策に必要な最小限の技術情報</li>
+      </ul>
+
+      <h2>利用目的</h2>
+      <ul>
+        <li>問い合わせへの返信、相談内容の整理、必要な追加確認</li>
+        <li>不正送信、迷惑送信、重複送信の防止</li>
+        <li>個人を特定しない形でのフォーム改善、導線改善</li>
+      </ul>
+
+      <h2>Analyticsへの送信</h2>
+      <p>氏名、メールアドレス、相談本文などの個人情報はGA4/GTMへ送信しません。計測イベントには、フォーム開始、エラー種別、送信成功など、個人を特定しない情報のみを渡す設計です。</p>
+
+      <h2>本番実装時の確認事項</h2>
+      <ul>
+        <li>`POST /api/lead` のサーバー側バリデーション、CSRF、レート制限</li>
+        <li>CRM、通知メール、Slack/Chat通知の権限管理</li>
+        <li>保存期間、削除依頼方法、問い合わせ窓口</li>
+        <li>HTTPS、CSP、Referrer-Policy、Permissions-Policy などのセキュリティヘッダー</li>
+      </ul>
+
+      <div class="simple-actions">
+        <a class="button" href="../#contact" data-track="cta" data-cta-id="privacy_back_contact" data-section-id="privacy">フォームへ戻る</a>
+        <a class="button button--outline" href="../" data-track="cta" data-cta-id="privacy_back_home" data-section-id="privacy">トップへ戻る</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div>
+        <a class="brand brand--footer" href="../" aria-label="しき AI Tech Studio ホーム">
+          <span class="brand__mark" aria-hidden="true">S</span>
+          <span>
+            <span class="brand__name">しき AI Tech Studio</span>
+            <span class="brand__tagline">Evidence first AI implementation</span>
+          </span>
+        </a>
+        <p>正式な個人情報取扱文面は、本番の運用体制に合わせて更新してください。</p>
+      </div>
+      <nav aria-label="フッターナビゲーション">
+        <a href="../">トップ</a>
+        <a href="../#contact">問い合わせ</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

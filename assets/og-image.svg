@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">しき AI Tech Studio OG image</title>
+  <desc id="desc">AIを話題で終わらせず、実装と運用に落とし込む証拠先行型LPのOG画像。</desc>
+  <rect width="1200" height="630" fill="#101315"/>
+  <path d="M0 502c176-42 318-52 454-28 145 25 250 83 411 76 119-5 207-43 335-83v163H0V502Z" fill="#0F7B4A"/>
+  <path d="M96 108h1008v414H96z" fill="none" stroke="#3A464A" stroke-width="2"/>
+  <path d="M158 188h198M158 234h322M158 280h270" stroke="#8EE2D4" stroke-width="10" stroke-linecap="round"/>
+  <text x="158" y="372" fill="#F8FBF8" font-family="'BIZ UDPMincho','Yu Mincho',serif" font-size="66" font-weight="800" letter-spacing="0">AIを実装と運用に落とし込む</text>
+  <text x="162" y="430" fill="#D7E4DF" font-family="'BIZ UDPGothic','Yu Gothic',sans-serif" font-size="30" font-weight="700" letter-spacing="0">GitHub、記事、登壇資料、検証ログで裏づける相談LP</text>
+  <g transform="translate(862 155)">
+    <rect width="188" height="188" rx="12" fill="#F8FBF8"/>
+    <path d="M50 123c10 16 29 24 51 24 28 0 48-14 48-35 0-20-13-29-42-36l-22-5c-15-4-21-8-21-17 0-10 11-17 28-17 16 0 27 5 37 16l15-20c-13-13-31-20-52-20-29 0-51 16-51 41 0 20 14 31 42 38l22 5c15 4 21 8 21 17 0 11-11 18-29 18-17 0-31-7-40-20l-7 11Z" fill="#101315"/>
+    <path d="M33 37h27v8H33v-8Zm99 109h27v8h-27v-8Zm24-109h12v12h-12V37ZM33 143h13v13H33v-13Z" fill="#087A88"/>
+  </g>
+</svg>

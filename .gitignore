@@ -1,0 +1,4 @@
+outputs/
+.ctx/
+*.log
+node_modules/
