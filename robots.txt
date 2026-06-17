@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shiki-ai-tech.example/sitemap.xml
+Sitemap: https://shikigami-ai-works.jp/sitemap.xml
