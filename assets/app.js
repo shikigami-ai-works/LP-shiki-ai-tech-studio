@@ -3,50 +3,67 @@
 
   var LP_META = {
     lp_id: "shikigami-ai-works-bright-home",
-    lp_variant: "sakura-gateway-main"
+    lp_variant: "new-proof-first-lp-20260623"
   };
 
   var proofDetails = {
     github: {
       type: "Repository",
-      title: "GitHubで見せるべき証拠",
-      copy: "評価者が見たいのは、完成形だけではなく、失敗した試行、設計判断、検証ブランチ、READMEの再現手順です。",
+      title: "GitHubで確認できること",
+      copy: "公開リポジトリは、実装痕跡、構成、README、更新履歴を確認する入口です。非公開のクライアントワークまでは証明しません。",
       items: [
-        "READMEに目的、入力、出力、制約、再現手順を置く",
-        "issueまたはdocsに採用しなかった選択肢を残す",
-        "デモではなく運用前提のエラー処理と評価ログを見せる"
+        "確認できるもの: 実装痕跡、リポジトリ構成、公開コードの衛生",
+        "証明できること: 作る力と記録の粒度",
+        "まだ証明しないこと: 非公開のクライアントワーク"
       ]
     },
     articles: {
       type: "Article",
-      title: "技術記事で見せるべき証拠",
-      copy: "記事は実装の背景を補います。どの前提で何を試し、何が失敗し、次に何を変えたかまで書くと相談前の信頼になります。",
+      title: "note/articlesで確認できること",
+      copy: "記事は、実装の背景、判断軸、捨てた選択肢、次に直す点を読むための入口です。本番SLAや保守契約の証拠ではありません。",
       items: [
-        "LLM、RAG、エージェント、自動化の判断軸を言語化する",
-        "成功例だけでなく、精度、速度、保守性の制約を書く",
-        "記事末尾から相談フォームまたは関連リポジトリへ接続する"
+        "確認できるもの: 思考過程、ドキュメント化、技術の切り分け",
+        "証明できること: 判断軸を言語化する力",
+        "まだ証明しないこと: 本番SLAや保守契約"
       ]
     },
-    slides: {
-      type: "Slide",
-      title: "登壇資料で見せるべき証拠",
-      copy: "登壇資料は、技術を他者に説明できる力の証拠です。図解、比較表、導入判断、失敗パターンを短時間で読める形にします。",
+    artifacts: {
+      type: "Artifact",
+      title: "artifacts/logsで確認できること",
+      copy: "成果物や検証ログは、相談後に判断材料として何を残すかを示す領域です。現時点では公開URLを整理中です。",
       items: [
-        "最初の3枚で対象者、課題、結論を示す",
-        "検証構成、評価指標、運用上の注意を図にする",
-        "資料から記事、GitHub、問い合わせへ迷わず移動できるようにする"
+        "確認できるもの: 成果物の型、検証メモ、出力規律",
+        "証明できること: 判断材料として残す習慣",
+        "まだ証明しないこと: 全実験が本番投入済みであること"
       ]
     },
     logs: {
-      type: "Artifact",
-      title: "検証ログで見せるべき証拠",
-      copy: "AI領域では、動いた結果だけでなく、条件を変えた時に何が起きたかが重要です。検証ログは再現性と更新性を補強します。",
+      type: "Validation",
+      title: "logs / validation notesで確認できること",
+      copy: "検証メモは、成功した結果だけでなく、失敗条件、評価観点、次に変えるべき仮説を残すための領域です。",
       items: [
-        "入力データ、モデル、プロンプト、評価基準を分けて記録する",
+        "入力データ、モデル、プロンプト、評価基準を分けて扱う",
         "失敗ログを隠さず、次の改善仮説と並べる",
         "公開できない情報は匿名化したサマリーに変換する"
       ]
+    },
+    "lp-audits": {
+      type: "UI Audit",
+      title: "LP/UI auditsで確認できること",
+      copy: "UI監査は、見えるボタンやリンクが実際に状態変化、遷移、検証結果を持つかを確認する証拠です。バックエンドCRM連携までは証明しません。",
+      items: [
+        "確認できるもの: 操作監査、証拠先行設計、CTAの修復履歴",
+        "証明できること: 有効なUI要素を放置しない運用",
+        "まだ証明しないこと: バックエンドCRM連携"
+      ]
     }
+  };
+
+  var servicePackLabels = {
+    "ai-consulting": "AI相談整理",
+    "rag-llm-validation": "RAG/LLM検証設計",
+    "agent-automation": "Agent/Automation設計",
+    "lp-proof-route": "LP証拠導線改善"
   };
 
   function pushEvent(eventName, params) {
@@ -189,6 +206,11 @@
           proof_id: proofId,
           section_id: button.closest("section") ? button.closest("section").id || "proof_strip" : "proof_strip"
         });
+        pushEvent("evidence_open", {
+          proof_type: proofDetails[proofId].type,
+          proof_id: proofId,
+          section_id: button.closest("section") ? button.closest("section").id || "proof_strip" : "proof_strip"
+        });
         if (typeof dialog.showModal === "function") {
           dialog.showModal();
         } else {
@@ -211,6 +233,55 @@
       if (event.target === dialog) {
         dialog.close();
       }
+    });
+  }
+
+  function setupProofLinkTracking() {
+    qsa("a[data-proof-id]").forEach(function (link) {
+      link.addEventListener("click", function () {
+        var proofId = link.dataset.proofId || "unknown";
+        pushEvent("proof_click", {
+          proof_id: proofId,
+          proof_type: proofDetails[proofId] ? proofDetails[proofId].type : "Link",
+          proof_action: link.dataset.proofAction || "link",
+          section_id: link.dataset.sectionId || (link.closest("section") ? link.closest("section").id || "unknown" : "footer")
+        });
+      });
+    });
+  }
+
+  function setupServicePackSelection() {
+    var form = qs("#lead-form");
+    var leadType = qs("#lead-type", form || document);
+    var note = qs("#selected-pack-note");
+
+    qsa("[data-service-pack]").forEach(function (control) {
+      control.addEventListener("click", function (event) {
+        var packId = control.dataset.servicePack;
+        var leadTypeValue = control.dataset.leadType || packId;
+        var packLabel = servicePackLabels[packId] || control.textContent.trim();
+        var matchingOption = leadType ? qs("option[value='" + leadTypeValue + "']", leadType) : null;
+
+        if (matchingOption) {
+          leadType.value = leadTypeValue;
+          leadType.dispatchEvent(new Event("change", { bubbles: true }));
+        }
+
+        if (note) {
+          note.textContent = "選択中: " + packLabel + "。必要なら相談種別を変更できます。";
+        }
+
+        pushEvent("service_pack_click", {
+          service_pack_id: packId || "unknown",
+          service_pack_label: packLabel,
+          lead_type: leadTypeValue
+        });
+
+        if (scrollToTarget("#contact")) {
+          event.preventDefault();
+          closeMobileNav();
+        }
+      });
     });
   }
 
@@ -467,7 +538,7 @@
           form_id: "lead-form",
           status: "client_validated"
         });
-        window.location.assign("thanks/index.html?v=sakura-gateway-20260622");
+        window.location.assign("thanks/index.html?v=new-lp-20260623");
       }, 650);
     });
   }
@@ -523,6 +594,8 @@
       });
       setupScrollDepth();
       setupProofDialog();
+      setupProofLinkTracking();
+      setupServicePackSelection();
       setupFaqTracking();
       setupForm();
     }

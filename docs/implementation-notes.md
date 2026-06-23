@@ -131,3 +131,35 @@ Active spec: `C:\Users\sakur\Downloads\私が作るべきランディングペ�
 - Tradeoff accepted: The wide desktop hero keeps the fox medallion and floating proof cards, but tablet/mobile hide the floating dashboard so the proof strip remains visible in the first viewport and text stays readable.
 - Affected files/behavior: `index.html`, `thanks/index.html`, `privacy/index.html`, `assets/styles.css`, `assets/app.js`.
 - Formalize later: If this direction is finalized for production, generate a matching OG image and update `assets/og-image.svg` or replace it with a raster social preview.
+
+### 2026-06-23: New proof-first LP specification implemented in the static homepage
+
+- Decision: `docs/new-lp-spec.md` became the active rewrite source for the homepage, and the existing Sakura Gateway visual identity was kept while the page architecture was replaced with hero, proof strip, target visitors, service packs, evidence cards, use cases, process, FAQ, and contact form.
+- Reason: The ticket asked to implement the new LP specification in the existing static site, not to introduce a framework or change the visual direction.
+- Tradeoff accepted: The page remains a dependency-free static site with a client-side form success path, so it proves the UX, validation, event design, and thanks-page routing but does not store or notify real inquiries.
+- Affected files/behavior: `index.html`, `assets/styles.css`, `assets/app.js`.
+- Formalize later: Add a backend lead endpoint, server-side validation, notification, CRM/storage, rate limiting, and final privacy operation before treating the form as a production intake channel.
+
+### 2026-06-23: Unavailable proof surfaces are modal or disabled instead of fake links
+
+- Decision: GitHub and note use the existing real public URLs, while artifacts/logs stay as explanatory dialogs with a disabled external action until a curated public URL exists.
+- Reason: The new spec forbids fake proof and requires every visible enabled control to have a real observable outcome.
+- Tradeoff accepted: The evidence section is honest but less externally rich until public artifact/log destinations are prepared.
+- Affected files/behavior: proof strip, evidence cards, proof dialog content, proof link analytics in `index.html` and `assets/app.js`.
+- Formalize later: Connect public-safe artifact, validation-log, or implementation-note destinations when they are curated for visitors.
+
+### 2026-06-23: Service-pack CTAs preselect the contact form instead of opening separate pages
+
+- Decision: Each `この相談を送る` CTA scrolls to the contact form, selects the matching request type, updates a visible status note, and emits `service_pack_click`.
+- Reason: The spec requires requestable units and real observable outcomes, but separate pack pages or pricing pages are not defined.
+- Tradeoff accepted: Visitors stay on one page, which is faster for the current static LP, but deeper pack-specific landing pages are deferred.
+- Affected files/behavior: service-pack CTA attributes in `index.html`, form-selection behavior and analytics in `assets/app.js`.
+- Formalize later: If pricing, scope, or examples are finalized, consider dedicated pack pages or anchored detail sections.
+
+### 2026-06-23: UI audit evidence card points to the generated audit memo
+
+- Decision: The LP/UI audits evidence card links to `docs/ui-interaction-audits/UI_INTERACTION_AUDIT_2026-06-23_new-lp.md`, which is generated as part of this implementation ticket.
+- Reason: The spec asks for proof/evidence interpretation and a new UI interaction audit under `docs/ui-interaction-audits/`.
+- Tradeoff accepted: The proof is a Markdown audit file served from the static tree rather than a polished public case-study page.
+- Affected files/behavior: `index.html` audit link and the new audit file.
+- Formalize later: Promote public-safe audit evidence into a designed proof page if this LP becomes a production marketing surface.

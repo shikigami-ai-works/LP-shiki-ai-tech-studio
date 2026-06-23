@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shikigami AI Works | 桜の入口からAI実装の証拠へ</title>
-  <meta name="description" content="Shikigami AI Worksは、桜としきがみの入口から、LLM、RAG、エージェント、自動化の検証知見、制作物、実装方針へ案内するAI・テック領域のホームページです。">
+  <title>Shikigami AI Works | AI実装・RAG・エージェント化の相談前に</title>
+  <meta name="description" content="Shikigami AI Worksは、LLM、RAG、AIエージェント、自動化、LP証拠導線の相談を、検証可能な実装方針と次の一手へ分解する小さなAI実装スタジオです。">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#f7fbff">
   <link rel="canonical" href="https://shikigami-ai-works.jp/">
   <link rel="icon" href="assets/site-icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css?v=sakura-gateway-20260622">
+  <link rel="stylesheet" href="assets/styles.css?v=new-lp-20260623">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="Shikigami AI Works">
-  <meta property="og:title" content="Shikigami AI Works | 桜の入口からAI実装の証拠へ">
-  <meta property="og:description" content="桜としきがみの入口から、GitHub、記事、検証ログ、制作物へ進めるAI実装ホームページ。">
+  <meta property="og:title" content="Shikigami AI Works | AI実装・RAG・エージェント化の相談前に">
+  <meta property="og:description" content="相談前に、作る力と判断材料を見える化する証拠先行型AI実装LP。">
   <meta property="og:url" content="https://shikigami-ai-works.jp/">
   <meta property="og:image" content="https://shikigami-ai-works.jp/assets/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
@@ -30,7 +30,7 @@
         "@id": "https://shikigami-ai-works.jp/#person",
         "name": "しき",
         "jobTitle": "AI・LLM実装 / 技術発信",
-        "description": "AI、LLM、RAG、エージェント、自動化の検証と実装知見を公開しながら相談支援を行う個人ブランド。",
+        "description": "LLM、RAG、AIエージェント、自動化、LP証拠導線の相談を、検証可能な実装方針と次の一手へ分解する小さなAI実装スタジオ。",
         "knowsAbout": ["AI implementation", "LLM", "RAG", "Agent workflow", "Automation", "Technical writing"]
       },
       {
@@ -50,9 +50,9 @@
         },
         "mainEntity": {
           "@type": "Service",
-          "name": "AI・LLM導入相談と実装方針設計",
+          "name": "AI実装・RAG・エージェント化の相談整理",
           "areaServed": "JP",
-          "serviceType": "AI implementation consulting",
+          "serviceType": "AI implementation, RAG validation, agent workflow, automation design, proof-route repair",
           "provider": {
             "@id": "https://shikigami-ai-works.jp/#person"
           }
@@ -64,26 +64,50 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "まだ要件が曖昧でも相談できますか。",
+            "name": "相談内容が曖昧でも大丈夫ですか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "可能です。最初は課題整理、現状整理、検証テーマの優先順位づけから始めます。"
+              "text": "大丈夫です。粗い文章から、背景、制約、検証テーマ、次に確認すべき問いへ分解します。"
             }
           },
           {
             "@type": "Question",
-            "name": "実装まで依頼できますか。",
+            "name": "守秘が必要な内容は送ってよいですか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "仕様、技術検証、プロトタイプ、実装方針の整理までを基本範囲とし、実装伴走は内容に応じて調整します。"
+              "text": "公開できない情報は伏せた概要で相談してください。必要な場合は個別に守秘前提を確認します。"
             }
           },
           {
             "@type": "Question",
-            "name": "機密情報を含む相談はできますか。",
+            "name": "実装まで依頼できますか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "公開できない情報は伏せた概要で相談できます。必要な場合は個別に秘密保持の前提を確認します。"
+              "text": "検証境界、成果物、リスクが見えたあと、必要に応じてプロトタイプや改善実装へ進みます。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "RAGやエージェントの品質はどう判断しますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "データ境界、検索失敗、回答評価、例外処理、人の確認点を分け、最初に小さな検証単位を置きます。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "料金はどの段階で決まりますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "初回の論点整理で範囲、公開可否、急ぎ度、実装の有無を確認してから見積もります。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "GitHubや記事が少なくてもLP改善できますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "できます。既存資料、制作物、検証メモ、公開できる範囲を棚卸しし、足りない証拠は作る順番を決めます。"
             }
           }
         ]
@@ -91,7 +115,7 @@
     ]
   }
   </script>
-  <script src="assets/app.js?v=sakura-gateway-20260622" defer></script>
+  <script src="assets/app.js?v=new-lp-20260623" defer></script>
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main">本文へ移動</a>
@@ -113,11 +137,11 @@
       </button>
       <nav class="site-nav" id="site-nav" aria-label="主要ナビゲーション">
         <a href="#proof" data-track="cta" data-cta-id="nav_proof" data-section-id="header">証拠</a>
-        <a href="#solution" data-track="cta" data-cta-id="nav_solution" data-section-id="header">支援内容</a>
-        <a href="#works" data-track="cta" data-cta-id="nav_works" data-section-id="header">成果物</a>
+        <a href="#audience" data-track="cta" data-cta-id="nav_audience" data-section-id="header">対象</a>
+        <a href="#service-packs" data-track="cta" data-cta-id="nav_service_packs" data-section-id="header">相談パック</a>
         <a href="#process" data-track="cta" data-cta-id="nav_process" data-section-id="header">進め方</a>
         <a href="#faq" data-track="cta" data-cta-id="nav_faq" data-section-id="header">FAQ</a>
-        <a class="button button--small" href="#contact" data-track="cta" data-cta-id="header_primary" data-section-id="header">相談する</a>
+        <a class="button button--small" href="#contact" data-track="cta" data-cta-id="header_primary" data-section-id="header">相談内容を送る</a>
       </nav>
     </div>
   </header>
@@ -128,49 +152,51 @@
       <img class="hero__image" src="assets/images/patterns/sakura-torii-gate.webp" width="1440" height="810" alt="桜と光の粒子に囲まれた鳥居">
       <div class="hero__inner">
         <div class="hero__content">
-          <h1 id="hero-title"><span>Shikigami AI</span> <span>Works</span></h1>
-          <p class="hero__lead">桜の入口から、AI実装の証拠へ。LLM、RAG、エージェント、自動化の検証ログと制作物を、相談前に見える形へ整えます。</p>
+          <p class="hero__brand">Shikigami AI Works</p>
+          <h1 id="hero-title"><span>AI実装・RAG・<wbr>エージェント化の</span><span>相談前に、<wbr>作る力と判断材料を</span><span>見える化する。</span></h1>
+          <p class="hero__lead">LLM、RAG、エージェント、自動化、LP証拠導線の相談を、検証可能な実装方針と次の一手へ分解します。</p>
+          <p class="hero__sublead">小さなAI実装スタジオとして、曖昧な相談を「何を試すか」「何を証拠にするか」「次に何を作るか」へ落とし込みます。</p>
           <div class="hero__actions" aria-label="主要アクション">
             <a class="button" href="#contact" data-track="cta" data-cta-id="hero_primary" data-section-id="hero">相談内容を送る</a>
             <a class="button button--secondary" href="#proof" data-track="cta" data-cta-id="hero_secondary_proof" data-section-id="hero">証拠を見る</a>
           </div>
-          <ul class="hero__facts" aria-label="Shikigami AI Works の確認できる導線">
+          <ul class="hero__facts" aria-label="確認できる証拠">
             <li>
               <span>01</span>
-              <strong>Brand gateway</strong>
-              <em>Shikigami / Sakura / AI Works</em>
+              <strong>GitHubで実装痕跡を確認</strong>
+              <em>公開コード、構成、制作単位を見る</em>
             </li>
             <li>
               <span>02</span>
-              <strong>Public proof</strong>
-              <em>GitHub / note / 検証ログ</em>
+              <strong>note/articlesで思考過程を確認</strong>
+              <em>判断軸、制約、学びを読む</em>
             </li>
             <li>
               <span>03</span>
-              <strong>Work path</strong>
-              <em>粗い相談から実装方針へ</em>
+              <strong>成果物は判断に使える形で残す</strong>
+              <em>検証方針、リスク、次の一手を明文化</em>
             </li>
           </ul>
         </div>
 
-        <div class="hero__dashboard" aria-label="証拠導線の概要">
+        <div class="hero__dashboard" aria-label="相談後に受け取る判断材料">
           <figure class="hero__seal" aria-hidden="true">
             <img src="assets/images/patterns/sakura-api-fox-logo.webp" width="1254" height="1254" alt="">
           </figure>
           <div class="signal-card signal-card--main">
-            <span class="signal-card__label">SAKURA GATE</span>
-            <strong>Identity and proof online</strong>
+            <span class="signal-card__label">OUTPUT</span>
+            <strong>problem map / feasibility notes / next-step prompt</strong>
             <div class="signal-card__bars" aria-hidden="true">
               <span></span><span></span><span></span><span></span><span></span>
             </div>
           </div>
           <div class="signal-card signal-card--right">
-            <span class="signal-card__label">ROUTE</span>
-            <strong>Proof → Contact</strong>
+            <span class="signal-card__label">PROOF ROUTE</span>
+            <strong>GitHub / note / audit docs</strong>
           </div>
           <div class="signal-card signal-card--bottom">
-            <span class="signal-card__label">WORK UNIT</span>
-            <strong>課題整理 / 検証 / 実装方針</strong>
+            <span class="signal-card__label">REQUESTABLE</span>
+            <strong>AI相談整理 / RAG検証 / Agent設計 / LP改善</strong>
           </div>
         </div>
       </div>
@@ -178,109 +204,95 @@
 
     <section class="proof-strip" aria-label="証拠ストリップ">
       <div class="proof-strip__inner">
-        <a class="proof-chip" href="https://github.com/shikigami-ai-works" target="_blank" rel="noopener noreferrer" data-track="cta" data-cta-id="proof_strip_github" data-section-id="proof_strip" aria-label="GitHubのホームページを開く">
+        <a class="proof-chip" href="https://github.com/shikigami-ai-works" target="_blank" rel="noopener noreferrer" data-track="cta" data-cta-id="proof_strip_github" data-section-id="proof_strip" data-proof-id="github" data-proof-action="external" aria-label="GitHubの公開プロフィールを開く">
           <span>GitHub</span>
-          <strong>実装の痕跡</strong>
+          <strong>実装痕跡</strong>
         </a>
-        <a class="proof-chip" href="https://note.com/intentus_26" target="_blank" rel="noopener noreferrer" data-track="cta" data-cta-id="proof_strip_note" data-section-id="proof_strip" aria-label="noteのホームページを開く">
-          <span>note / 技術記事</span>
-          <strong>判断の根拠</strong>
+        <a class="proof-chip" href="https://note.com/intentus_26" target="_blank" rel="noopener noreferrer" data-track="cta" data-cta-id="proof_strip_note" data-section-id="proof_strip" data-proof-id="articles" data-proof-action="external" aria-label="noteの記事一覧を開く">
+          <span>note / articles</span>
+          <strong>思考過程</strong>
         </a>
-        <button class="proof-chip" type="button" data-proof-open="slides">
-          <span>Speaker Deck</span>
-          <strong>対外説明</strong>
+        <button class="proof-chip" type="button" data-proof-open="artifacts">
+          <span>artifacts</span>
+          <strong>成果物の型</strong>
         </button>
         <button class="proof-chip" type="button" data-proof-open="logs">
-          <span>検証ログ</span>
-          <strong>再現性</strong>
+          <span>logs / validation</span>
+          <strong>検証習慣</strong>
         </button>
+        <a class="proof-chip" href="#contact" data-track="cta" data-cta-id="proof_strip_contact" data-section-id="proof_strip">
+          <span>contact</span>
+          <strong>相談導線</strong>
+        </a>
       </div>
     </section>
 
-    <section class="section section--intro" id="problems" aria-labelledby="problems-title">
-      <div class="section__inner section__inner--split">
-        <div>
-          <p class="section__label">Problem</p>
-          <h2 id="problems-title">AI導入の詰まりは、技術力不足より「判断材料不足」で起きる。</h2>
-          <p class="section__intro">ベンダー提案や流行語だけでは、何を試し、何を捨て、どこから実装するかを決めづらい。評価者が必要としているのは、抽象論ではなく、動いた痕跡と検証の筋道です。</p>
+    <section class="section section--intro" id="audience" aria-labelledby="audience-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <p class="section__label">Who this is for</p>
+          <h2 id="audience-title">最初に決めるべきことが曖昧な人のための、判断材料づくり。</h2>
+          <p class="section__intro">AI導入、RAG、エージェント、自動化、LP改善を「作る前に何を確かめるか」へ分解します。</p>
         </div>
-        <div class="problem-list" aria-label="よくある課題">
+        <div class="audience-grid" aria-label="想定相談者">
           <article class="problem-card">
             <span>01</span>
-            <h3>何から検証すべきか決まらない</h3>
-            <p>RAG、AIエージェント、自動化が候補に並ぶほど、初手の優先順位が曖昧になります。</p>
+            <h3>AI導入の最初の検証テーマが決まらない</h3>
+            <p>受け取れるもの: issue decomposition and validation candidate list</p>
           </article>
           <article class="problem-card">
             <span>02</span>
-            <h3>実装できる人か見極めづらい</h3>
-            <p>きれいな提案書より、GitHub、設計、失敗ログ、改善履歴を見たい評価者がいます。</p>
+            <h3>RAGやLLM活用がPoCで止まりそう</h3>
+            <p>受け取れるもの: retrieval design, eval viewpoint, implementation risk map</p>
           </article>
           <article class="problem-card">
             <span>03</span>
-            <h3>PoCで止まりやすい</h3>
-            <p>デモは動いても、運用、例外処理、評価指標、社内説明の設計が抜けると止まります。</p>
+            <h3>エージェント化/自動化の適用範囲を決めたい</h3>
+            <p>受け取れるもの: workflow breakdown, automation boundary, failure handling plan</p>
+          </article>
+          <article class="problem-card">
+            <span>04</span>
+            <h3>ホームページに信用材料が足りない</h3>
+            <p>受け取れるもの: proof-route map, evidence card design, CTA repair plan</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--visual" id="solution" aria-labelledby="solution-title">
+    <section class="section section--visual" id="service-packs" aria-labelledby="service-packs-title">
       <div class="section__inner section__inner--visual">
         <div class="visual-panel">
           <img src="assets/images/patterns/sealed-letter-card.webp" width="1440" height="810" alt="封蝋付きの明るい書簡カード">
         </div>
         <div class="solution-copy">
-          <p class="section__label">Solution</p>
-          <h2 id="solution-title">相談前に、作る力と考える筋道が見えるホームページへ。</h2>
-          <p class="section__intro">「問い合わせしてください」だけを迫らず、先に証拠、判断基準、成果物の型を見せます。必要な人だけが、安心して相談に進める構造です。</p>
-          <div class="solution-grid">
-            <article class="solution-card">
+          <p class="section__label">Service packs</p>
+          <h2 id="service-packs-title">曖昧な問い合わせではなく、依頼しやすい相談単位へ。</h2>
+          <p class="section__intro">価格は未確定なので出しません。代わりに、相談時点で残す成果物を先に明記します。</p>
+          <div class="service-grid">
+            <article class="service-card">
               <span class="solution-card__index">01</span>
-              <h3>課題を検証テーマに変える</h3>
-              <p>曖昧なAI導入希望を、業務影響、データ状態、失敗コスト、初期評価指標に分解します。</p>
+              <h3>AI相談整理</h3>
+              <p>「何をAI化すべきか分からない」状態を、problem map、feasibility notes、next-step promptへ分解します。</p>
+              <a class="button button--outline" href="#contact" data-service-pack="ai-consulting" data-lead-type="ai-consulting" data-track="cta" data-cta-id="pack_ai_consulting" data-section-id="service_packs">この相談を送る</a>
             </article>
-            <article class="solution-card">
+            <article class="service-card">
               <span class="solution-card__index">02</span>
-              <h3>証拠で技術信頼を補強する</h3>
-              <p>公開コード、記事、登壇資料、検証ログを同じ流れで見せ、判断の根拠を残します。</p>
+              <h3>RAG/LLM検証設計</h3>
+              <p>検索・回答品質をどう試すかを、validation plan、data boundary、eval checklistへ整理します。</p>
+              <a class="button button--outline" href="#contact" data-service-pack="rag-llm-validation" data-lead-type="rag-llm-validation" data-track="cta" data-cta-id="pack_rag_llm" data-section-id="service_packs">この相談を送る</a>
             </article>
-            <article class="solution-card">
+            <article class="service-card">
               <span class="solution-card__index">03</span>
-              <h3>相談内容を実装方針へ落とす</h3>
-              <p>問い合わせ後は、目的、制約、既存資産、リスク、次の検証単位を整理して返します。</p>
+              <h3>Agent/Automation設計</h3>
+              <p>どこまで自動化してよいかを、workflow map、tool boundary、failure pathとして残します。</p>
+              <a class="button button--outline" href="#contact" data-service-pack="agent-automation" data-lead-type="agent-automation" data-track="cta" data-cta-id="pack_agent_automation" data-section-id="service_packs">この相談を送る</a>
             </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="difference" aria-labelledby="difference-title">
-      <div class="section__inner section__inner--split">
-        <div>
-          <p class="section__label">Difference</p>
-          <h2 id="difference-title">一次情報、実装経験、継続発信を同じ画面で評価できる。</h2>
-          <p class="section__intro">AI領域は更新が速いからこそ、肩書きより更新履歴が効きます。最新の学び、失敗の理由、採用しなかった選択肢まで見える導線を重視します。</p>
-        </div>
-        <div class="compare-table" role="table" aria-label="一般的な営業LPとの差分">
-          <div role="row" class="compare-table__head">
-            <span role="columnheader">一般的なLP</span>
-            <span role="columnheader">このホームページ</span>
-          </div>
-          <div role="row">
-            <span role="cell">主張が先に来る</span>
-            <span role="cell">証拠が先に来る</span>
-          </div>
-          <div role="row">
-            <span role="cell">実績数だけを並べる</span>
-            <span role="cell">コード、記事、ログで文脈を示す</span>
-          </div>
-          <div role="row">
-            <span role="cell">CTAが単発</span>
-            <span role="cell">相談と証拠閲覧の二経路</span>
-          </div>
-          <div role="row">
-            <span role="cell">計測が後付け</span>
-            <span role="cell">dataLayer前提でイベント設計</span>
+            <article class="service-card">
+              <span class="solution-card__index">04</span>
+              <h3>LP証拠導線改善</h3>
+              <p>実績や制作物を信用に変えるため、proof inventory、section rewrite、CTA mapを作ります。</p>
+              <a class="button button--outline" href="#contact" data-service-pack="lp-proof-route" data-lead-type="lp-proof-route" data-track="cta" data-cta-id="pack_lp_proof" data-section-id="service_packs">この相談を送る</a>
+            </article>
           </div>
         </div>
       </div>
@@ -289,94 +301,104 @@
     <section class="section section--proof" id="proof" aria-labelledby="proof-title">
       <div class="section__inner">
         <div class="section__header">
-          <p class="section__label">Evidence</p>
-          <h2 id="proof-title">証拠は飾りではなく、相談前の評価材料です。</h2>
-          <p class="section__intro">公開済みの導線はすぐ外部へ移動できます。未設定の証拠は、見せ方だけを先に確認できるようにしています。</p>
+          <p class="section__label">Evidence cards</p>
+          <h2 id="proof-title">証拠は、見せるだけでなく「何が言えるか」まで分解します。</h2>
+          <p class="section__intro">公開できるものはリンクし、未整理のものは未整理と示します。クライアント実績や数値は、公開安全な根拠がない限り出しません。</p>
         </div>
         <div class="evidence-grid">
           <article class="evidence-card">
             <div class="evidence-card__top">
-              <span class="evidence-card__type">Repository</span>
+              <span class="evidence-card__type">GitHub</span>
               <span class="status-pill">URL接続済み</span>
             </div>
-            <h3>GitHub / 実装ログ</h3>
-            <p>動作するコード、設計判断、検証ブランチ、失敗した試行を確認できる導線。</p>
-            <button class="text-button" type="button" data-proof-open="github">見せ方を確認する</button>
-            <a class="button" href="https://github.com/shikigami-ai-works" target="_blank" rel="noopener noreferrer" data-track="cta" data-cta-id="proof_card_github" data-section-id="proof">GitHubを見る</a>
+            <h3>GitHub</h3>
+            <dl class="evidence-card__meta">
+              <div><dt>見られるもの</dt><dd>実装痕跡、リポジトリ構成、公開コードの衛生</dd></div>
+              <div><dt>証明できること</dt><dd>作る力と記録の粒度</dd></div>
+              <div><dt>まだ証明しないこと</dt><dd>非公開のクライアントワーク</dd></div>
+            </dl>
+            <button class="text-button" type="button" data-proof-open="github">解釈を開く</button>
+            <a class="button" href="https://github.com/shikigami-ai-works" target="_blank" rel="noopener noreferrer" data-track="cta" data-cta-id="proof_card_github" data-section-id="proof" data-proof-id="github" data-proof-action="external">GitHubを見る</a>
           </article>
           <article class="evidence-card">
             <div class="evidence-card__top">
-              <span class="evidence-card__type">Article</span>
+              <span class="evidence-card__type">note/articles</span>
               <span class="status-pill">URL接続済み</span>
             </div>
-            <h3>note / 技術記事</h3>
-            <p>なぜその構成にしたか、どの制約を捨てたか、実装後に何を学んだか。</p>
-            <button class="text-button" type="button" data-proof-open="articles">見せ方を確認する</button>
-            <a class="button" href="https://note.com/intentus_26" target="_blank" rel="noopener noreferrer" data-track="cta" data-cta-id="proof_card_note" data-section-id="proof">noteを見る</a>
+            <h3>note/articles</h3>
+            <dl class="evidence-card__meta">
+              <div><dt>見られるもの</dt><dd>思考過程、ドキュメント化、技術の切り分け</dd></div>
+              <div><dt>証明できること</dt><dd>判断軸を言語化する力</dd></div>
+              <div><dt>まだ証明しないこと</dt><dd>本番SLAや保守契約</dd></div>
+            </dl>
+            <button class="text-button" type="button" data-proof-open="articles">解釈を開く</button>
+            <a class="button" href="https://note.com/intentus_26" target="_blank" rel="noopener noreferrer" data-track="cta" data-cta-id="proof_card_note" data-section-id="proof" data-proof-id="articles" data-proof-action="external">noteを見る</a>
           </article>
           <article class="evidence-card">
             <div class="evidence-card__top">
-              <span class="evidence-card__type">Slide</span>
-              <span class="status-pill status-pill--pending">URL設定待ち</span>
+              <span class="evidence-card__type">artifacts/logs</span>
+              <span class="status-pill status-pill--pending">公開URL未整理</span>
             </div>
-            <h3>登壇資料 / 説明資料</h3>
-            <p>社内外の評価者が短時間で読める、構造化された説明と図解。</p>
-            <button class="text-button" type="button" data-proof-open="slides">見せ方を確認する</button>
-            <button class="button button--disabled" type="button" disabled>外部URL未設定</button>
+            <h3>artifacts/logs</h3>
+            <dl class="evidence-card__meta">
+              <div><dt>見られるもの</dt><dd>成果物の型、検証メモ、出力規律</dd></div>
+              <div><dt>証明できること</dt><dd>判断材料として残す習慣</dd></div>
+              <div><dt>まだ証明しないこと</dt><dd>全実験が本番投入済みであること</dd></div>
+            </dl>
+            <button class="text-button" type="button" data-proof-open="artifacts">解釈を開く</button>
+            <button class="button button--disabled" type="button" disabled>公開URL整理中</button>
           </article>
           <article class="evidence-card">
             <div class="evidence-card__top">
-              <span class="evidence-card__type">Artifact</span>
-              <span class="status-pill status-pill--pending">URL設定待ち</span>
+              <span class="evidence-card__type">LP/UI audits</span>
+              <span class="status-pill">ローカル証拠あり</span>
             </div>
-            <h3>制作物 / 検証ログ</h3>
-            <p>プロトタイプ、検証画像、評価メモ、運用前提をまとめた判断材料。</p>
-            <button class="text-button" type="button" data-proof-open="logs">見せ方を確認する</button>
-            <button class="button button--disabled" type="button" disabled>外部URL未設定</button>
+            <h3>LP/UI audits</h3>
+            <dl class="evidence-card__meta">
+              <div><dt>見られるもの</dt><dd>操作監査、証拠先行設計、CTAの修復履歴</dd></div>
+              <div><dt>証明できること</dt><dd>有効なUI要素を放置しない運用</dd></div>
+              <div><dt>まだ証明しないこと</dt><dd>バックエンドCRM連携</dd></div>
+            </dl>
+            <button class="text-button" type="button" data-proof-open="lp-audits">解釈を開く</button>
+            <a class="button" href="docs/ui-interaction-audits/UI_INTERACTION_AUDIT_2026-06-23_new-lp.md" data-track="cta" data-cta-id="proof_card_ui_audit" data-section-id="proof" data-proof-id="lp-audits" data-proof-action="audit_doc">監査メモを見る</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--works" id="works" aria-labelledby="works-title">
-      <div class="section__inner section__inner--visual section__inner--visual-reverse">
+    <section class="section" id="use-cases" aria-labelledby="use-cases-title">
+      <div class="section__inner section__inner--split">
         <div>
-          <p class="section__label">Outputs</p>
-          <h2 id="works-title">相談後に残す成果物は、次の判断に使える形へ。</h2>
-          <p class="section__intro">「話して終わり」ではなく、社内説明、実装開始、外部委託、追加検証に再利用できるアウトプットを前提にします。</p>
-          <div class="output-list">
-            <article class="output-item">
-              <span>01</span>
-              <div>
-                <h3>課題整理メモ</h3>
-                <p>目的、現状、制約、失敗リスク、期待成果を1枚で確認できる状態にします。</p>
-              </div>
-            </article>
-            <article class="output-item">
-              <span>02</span>
-              <div>
-                <h3>検証計画</h3>
-                <p>評価指標、対象データ、スコープ、停止条件、次に捨てる案まで決めます。</p>
-              </div>
-            </article>
-            <article class="output-item">
-              <span>03</span>
-              <div>
-                <h3>実装方針</h3>
-                <p>LLM、RAG、エージェント、自動化のどれを選ぶか、構成と運用面から提案します。</p>
-              </div>
-            </article>
-            <article class="output-item">
-              <span>04</span>
-              <div>
-                <h3>証拠導線の整備</h3>
-                <p>公開できる範囲で、コード、記事、図、登壇資料、検証ログを評価者向けに並べます。</p>
-              </div>
-            </article>
-          </div>
+          <p class="section__label">Use cases</p>
+          <h2 id="use-cases-title">ツール選定の前に、境界と失敗条件を決める。</h2>
+          <p class="section__intro">大きなAI導入話にせず、次に試せる検証単位まで落とします。</p>
         </div>
-        <div class="visual-panel visual-panel--soft">
-          <img src="assets/images/bright/process-circuit-horizon.webp" width="1500" height="844" alt="明るいガラス基板上に立ち上がる回路インターフェース">
+        <div class="use-case-table" role="table" aria-label="状況ごとの次の一手">
+          <div role="row" class="compare-table__head">
+            <span role="columnheader">状況</span>
+            <span role="columnheader">避けたい初手</span>
+            <span role="columnheader">Shikigamiの初手</span>
+          </div>
+          <div role="row">
+            <span role="cell">生成AIを使いたいがテーマが曖昧</span>
+            <span role="cell">tool selection first</span>
+            <span role="cell">problem decomposition first</span>
+          </div>
+          <div role="row">
+            <span role="cell">RAGを作りたい</span>
+            <span role="cell">vector DB choice first</span>
+            <span role="cell">source/data/eval boundary first</span>
+          </div>
+          <div role="row">
+            <span role="cell">エージェントで自動化したい</span>
+            <span role="cell">full automation first</span>
+            <span role="cell">human-in-loop and failure path first</span>
+          </div>
+          <div role="row">
+            <span role="cell">LPを作ったが信用されない</span>
+            <span role="cell">visual polish first</span>
+            <span role="cell">proof source and CTA route first</span>
+          </div>
         </div>
       </div>
     </section>
@@ -385,28 +407,28 @@
       <div class="section__inner">
         <div class="section__header">
           <p class="section__label">Process</p>
-          <h2 id="process-title">進め方は小さく、記録は濃く。</h2>
+          <h2 id="process-title">粗い相談から、検証方針と次の一手まで。</h2>
         </div>
         <ol class="timeline">
           <li>
             <span>1</span>
             <h3>相談内容を送る</h3>
-            <p>課題、背景、関連URL、希望時期をフォームから送ります。</p>
+            <p>未整理の文章、URL、資料、困っている背景を送ります。</p>
           </li>
           <li>
             <span>2</span>
-            <h3>論点を整理する</h3>
-            <p>AIで解くべきか、既存自動化で足りるか、検証単位を切ります。</p>
+            <h3>論点を分解する</h3>
+            <p>不明点は質問または仮定として切り分け、判断に必要な情報を明確にします。</p>
           </li>
           <li>
             <span>3</span>
-            <h3>検証計画を決める</h3>
-            <p>小さく試せる入力、成功条件、失敗時の戻り先を決めます。</p>
+            <h3>検証方針を決める</h3>
+            <p>成果物、スコープ、証拠、リスク、停止条件を名前つきで置きます。</p>
           </li>
           <li>
             <span>4</span>
-            <h3>必要なら伴走する</h3>
-            <p>実装、レビュー、ドキュメント化、社内説明まで範囲を調整します。</p>
+            <h3>必要なら実装/改善に進む</h3>
+            <p>検証境界が見えてから、プロトタイプ、RAG設計、LP修正などに進みます。</p>
           </li>
         </ol>
       </div>
@@ -416,29 +438,33 @@
       <div class="section__inner section__inner--split">
         <div>
           <p class="section__label">FAQ</p>
-          <h2 id="faq-title">問い合わせ前の不安を減らす。</h2>
-          <p class="section__intro">FAQはすべて開閉でき、開いた項目は `faq_expand` として計測できます。</p>
+          <h2 id="faq-title">問い合わせ前の不安を、先に切り分ける。</h2>
+          <p class="section__intro">できること、まだ言えないこと、公開してはいけない情報を分けて扱います。</p>
         </div>
         <div class="faq-list">
-          <details data-faq-id="requirements">
-            <summary>まだ要件が曖昧でも相談できますか。</summary>
-            <p>できます。最初は課題整理、現状整理、検証テーマの優先順位づけから始めます。</p>
-          </details>
-          <details data-faq-id="implementation">
-            <summary>実装まで依頼できますか。</summary>
-            <p>仕様、技術検証、プロトタイプ、実装方針の整理までを基本範囲とし、実装伴走は内容に応じて調整します。</p>
+          <details data-faq-id="rough-request">
+            <summary>相談内容が曖昧でも大丈夫ですか？</summary>
+            <p>大丈夫です。粗い文章から、背景、制約、検証テーマ、次に確認すべき問いへ分解します。</p>
           </details>
           <details data-faq-id="confidentiality">
-            <summary>機密情報を含む相談はできますか。</summary>
-            <p>公開できない情報は伏せた概要で相談できます。必要な場合は個別に秘密保持の前提を確認します。</p>
+            <summary>守秘が必要な内容は送ってよいですか？</summary>
+            <p>公開できない情報は伏せた概要で送ってください。必要な場合は個別に守秘前提を確認します。</p>
           </details>
-          <details data-faq-id="response">
-            <summary>返信目安はどれくらいですか。</summary>
-            <p>現時点では1営業日以内を仮定しています。正式な返信SLAは運用体制確定後に更新します。</p>
+          <details data-faq-id="implementation">
+            <summary>実装まで依頼できますか？</summary>
+            <p>検証境界、成果物、リスクが見えたあと、必要に応じてプロトタイプや改善実装へ進みます。</p>
+          </details>
+          <details data-faq-id="quality">
+            <summary>RAGやエージェントの品質はどう判断しますか？</summary>
+            <p>データ境界、検索失敗、回答評価、例外処理、人の確認点を分け、最初に小さな検証単位を置きます。</p>
           </details>
           <details data-faq-id="pricing">
-            <summary>料金は決まっていますか。</summary>
-            <p>料金体系は未確定です。初回相談では、課題の大きさ、公開可否、実装範囲、急ぎ度をもとに見積もります。</p>
+            <summary>料金はどの段階で決まりますか？</summary>
+            <p>初回の論点整理で範囲、公開可否、急ぎ度、実装の有無を確認してから見積もります。</p>
+          </details>
+          <details data-faq-id="few-proofs">
+            <summary>GitHubや記事が少なくてもLP改善できますか？</summary>
+            <p>できます。既存資料、制作物、検証メモ、公開できる範囲を棚卸しし、足りない証拠は作る順番を決めます。</p>
           </details>
         </div>
       </div>
@@ -448,10 +474,10 @@
       <div class="section__inner final-cta">
         <div>
           <p class="section__label">Contact</p>
-          <h2 id="final-cta-title">まずは、相談内容を実装可能な問いに分解する。</h2>
-          <p>AI導入の相談、LLM/RAG検証、技術発信、登壇、記事執筆、採用面談まで、目的に近い種別を選んで送ってください。</p>
+          <h2 id="final-cta-title">相談前に、作る力と判断材料を見える化する。</h2>
+          <p>AI相談整理、RAG/LLM検証設計、Agent/Automation設計、LP証拠導線改善のいずれかを選んで送れます。</p>
         </div>
-        <a class="button button--light" href="#contact" data-track="cta" data-cta-id="final_primary" data-section-id="final_cta">フォームへ進む</a>
+        <a class="button button--light" href="#contact" data-track="cta" data-cta-id="final_primary" data-section-id="final_cta">相談内容を送る</a>
       </div>
     </section>
 
@@ -460,11 +486,12 @@
         <div class="contact-copy">
           <p class="section__label">Lead form</p>
           <h2 id="contact-title">相談内容を送る</h2>
-          <p>このフォームは静的環境で検証できるよう、送信後にサンクスページへ遷移します。本番では `POST /api/lead` に差し替える想定です。</p>
+          <p>背景、困っていること、試したこと、見てほしいURLや資料があれば送ってください。未整理でもかまいません。</p>
+          <p class="pack-selected" id="selected-pack-note" role="status" aria-live="polite">相談パックを選ぶと、相談種別に反映されます。</p>
           <ul class="contact-notes">
             <li>氏名やメールはAnalyticsへ送信しません。</li>
             <li>エラーは入力欄直下とフォーム上部に表示します。</li>
-            <li>送信中はボタンを無効化し、二重送信を防ぎます。</li>
+            <li>送信後は確認ページへ移動します。実運用では保存と通知処理を接続します。</li>
           </ul>
         </div>
 
@@ -478,13 +505,13 @@
             <label for="lead-type">相談種別 <span aria-hidden="true">*</span></label>
             <select id="lead-type" name="leadType" required autocomplete="off">
               <option value="">選択してください</option>
-              <option value="consulting">AI導入・LLM活用の相談</option>
-              <option value="speaking">登壇依頼</option>
-              <option value="writing">記事執筆・技術監修</option>
-              <option value="hiring">採用・面談</option>
+              <option value="ai-consulting">AI相談整理</option>
+              <option value="rag-llm-validation">RAG/LLM検証設計</option>
+              <option value="agent-automation">Agent/Automation設計</option>
+              <option value="lp-proof-route">LP証拠導線改善</option>
               <option value="other">その他</option>
             </select>
-            <p class="field-help" id="lead-type-help">目的に一番近いものを選んでください。</p>
+            <p class="field-help" id="lead-type-help">目的に一番近い相談単位を選んでください。</p>
             <p class="field-error" id="lead-type-error"></p>
           </div>
 
@@ -512,7 +539,7 @@
           <div class="form-row">
             <label for="related-url">関連URL</label>
             <input id="related-url" name="relatedUrl" type="url" autocomplete="url" placeholder="https://example.com/project">
-            <p class="field-help" id="related-url-help">任意です。資料、GitHub、記事、既存ページなどがあれば入力してください。</p>
+            <p class="field-help" id="related-url-help">任意です。資料、GitHub、記事、既存LPなどがあれば入力してください。</p>
             <p class="field-error" id="related-url-error"></p>
           </div>
 
@@ -531,7 +558,7 @@
           <div class="form-row form-row--full">
             <label for="message">相談内容 <span aria-hidden="true">*</span></label>
             <textarea id="message" name="message" required minlength="30" maxlength="2000" rows="7" placeholder="例: 社内ナレッジを使ったRAG検索を検討しています。現状の資料形式、利用者、評価指標の決め方から相談したいです。"></textarea>
-            <p class="field-help" id="message-help">30〜2000文字で、背景、困っていること、試したことを書いてください。</p>
+            <p class="field-help" id="message-help">背景、困っていること、試したこと、見てほしいURLや資料があれば書いてください。未整理でもかまいません。</p>
             <p class="field-error" id="message-error"></p>
           </div>
 
@@ -547,7 +574,7 @@
           </div>
 
           <button class="button lead-form__submit" type="submit">相談内容を送る</button>
-          <p class="form-footnote">送信すると、静的デモではサンクスページへ遷移します。本番ではサーバー側検証と通知処理が必要です。</p>
+          <p class="form-footnote">この静的フォームは確認ページへの遷移までを検証します。本番の保存、通知、CRM連携は未接続です。</p>
         </form>
       </div>
     </section>
@@ -579,10 +606,13 @@
             <span class="brand__tagline">Evidence first AI implementation</span>
           </span>
         </a>
-        <p>AI・テック領域の証拠先行型ホームページ。公開証拠と問い合わせ導線を同じ情報設計で扱います。</p>
+        <p>AI実装、RAG、エージェント化、自動化、LP証拠導線を、相談前に判断できる形へ分解します。</p>
+        <p class="site-footer__domain">Canonical: https://shikigami-ai-works.jp/</p>
       </div>
       <nav aria-label="フッターナビゲーション">
         <a href="#proof">証拠</a>
+        <a href="https://github.com/shikigami-ai-works" target="_blank" rel="noopener noreferrer" data-proof-id="github" data-proof-action="footer_external">GitHub</a>
+        <a href="https://note.com/intentus_26" target="_blank" rel="noopener noreferrer" data-proof-id="articles" data-proof-action="footer_external">note</a>
         <a href="#contact">問い合わせ</a>
         <a href="privacy/">個人情報の取扱い</a>
       </nav>
