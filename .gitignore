@@ -9,3 +9,17 @@ node_modules/
 !.dev.vars.example
 .env*
 !.env.example
+
+# Codex preservation artifacts
+NEXT_CHAT_HANDOFF_*.md
+NEXTCHAT_CONTEXT_LEDGER_*.md
+docs/NEXT_CHAT_HANDOFF_*.md
+docs/NEXTCHAT_CONTEXT_LEDGER_*.md
+docs/progress-snapshots/
+.context-archive/
+Nextchat_full_archive/
+full_archive/
+*.sqlite
+*.sqlite3
+*.db
+*.gz

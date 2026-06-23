@@ -2,8 +2,8 @@
   "use strict";
 
   var LP_META = {
-    lp_id: "ai-tech-proof-first-lp",
-    lp_variant: "A"
+    lp_id: "shikigami-ai-works-bright-home",
+    lp_variant: "sakura-gateway-main"
   };
 
   var proofDetails = {
@@ -467,7 +467,7 @@
           form_id: "lead-form",
           status: "client_validated"
         });
-        window.location.assign("thanks/index.html");
+        window.location.assign("thanks/index.html?v=sakura-gateway-20260622");
       }, 650);
     });
   }
