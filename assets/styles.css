@@ -320,6 +320,7 @@ button {
   position: relative;
   overflow: hidden;
   min-height: 660px;
+  --hero-image-opacity: 0.8;
   background: #fff8fc;
 }
 
@@ -354,6 +355,7 @@ button {
   height: 100%;
   object-fit: cover;
   object-position: center right;
+  opacity: var(--hero-image-opacity);
   filter: saturate(1.06) contrast(1.04) brightness(1.08);
 }
 
@@ -1507,13 +1509,14 @@ button {
   }
 
   .hero__image {
-    opacity: 0.82;
+    opacity: var(--hero-image-opacity);
     object-position: 58% center;
   }
 
   .hero::before {
     background:
-      linear-gradient(180deg, rgba(255, 251, 253, 0.99) 0%, rgba(255, 251, 253, 0.94) 54%, rgba(255, 248, 252, 0.78) 100%),
+      linear-gradient(90deg, rgba(255, 251, 253, 0.98) 0%, rgba(255, 251, 253, 0.9) 44%, rgba(255, 248, 252, 0.5) 72%, rgba(255, 248, 252, 0.26) 100%),
+      linear-gradient(180deg, rgba(255, 251, 253, 0.76) 0%, rgba(255, 251, 253, 0.52) 42%, rgba(255, 248, 252, 0.18) 76%, rgba(255, 248, 252, 0.06) 100%),
       radial-gradient(circle at 56% 20%, rgba(239, 106, 168, 0.14), transparent 42%),
       linear-gradient(180deg, rgba(255, 255, 255, 0) 72%, var(--paper) 100%);
   }
