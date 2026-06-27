@@ -1515,8 +1515,8 @@ button {
 
   .hero::before {
     background:
-      linear-gradient(90deg, rgba(255, 251, 253, 0.98) 0%, rgba(255, 251, 253, 0.9) 44%, rgba(255, 248, 252, 0.5) 72%, rgba(255, 248, 252, 0.26) 100%),
-      linear-gradient(180deg, rgba(255, 251, 253, 0.76) 0%, rgba(255, 251, 253, 0.52) 42%, rgba(255, 248, 252, 0.18) 76%, rgba(255, 248, 252, 0.06) 100%),
+      linear-gradient(90deg, rgba(255, 251, 253, 0.88) 0%, rgba(255, 251, 253, 0.76) 44%, rgba(255, 248, 252, 0.34) 72%, rgba(255, 248, 252, 0.12) 100%),
+      linear-gradient(180deg, rgba(255, 251, 253, 0.52) 0%, rgba(255, 251, 253, 0.34) 42%, rgba(255, 248, 252, 0.12) 76%, rgba(255, 248, 252, 0.04) 100%),
       radial-gradient(circle at 56% 20%, rgba(239, 106, 168, 0.14), transparent 42%),
       linear-gradient(180deg, rgba(255, 255, 255, 0) 72%, var(--paper) 100%);
   }
